@@ -1,0 +1,102 @@
+# 通神兵器库 — 快速使用指南
+
+> 封存时间：2026-06-21
+> 版本：v1.0
+> 技能总数：78个有用Skill + 10个MCP服务器 + 5个API凭证
+
+---
+
+## 一、这是什么？
+
+这是「通神 v8.1」系统的全部有用Skill封存包，包含：
+- 全部78个有用Skill的索引目录
+- 5个API凭证（Firecrawl、GitHub、微信公众号）
+- 10个MCP服务器配置
+- 迁移和使用说明
+
+---
+
+## 二、API 凭证速查
+
+| 服务 | Key | 到期日 |
+|------|-----|--------|
+| Firecrawl | `fc-7f6c51167e4d4c4abe925b8d179ae30d` | 长期有效 |
+| GitHub PAT | `ghp_YOUR_TOKEN_PLACEHOLDER` | **2027-06-15** |
+| 微信 APP_ID | `wx3d0126d5a6020045` | 长期有效 |
+| 微信 APP_SECRET | `a6bc3af9f36ad78082a75b0d8fcb263e` | 长期有效 |
+| 微信 IP白名单 | `183.46.128.45` | 需在微信后台配置 |
+
+---
+
+## 三、日常使用
+
+在 WorkBuddy 对话中直接说触发词，系统自动匹配Skill：
+
+| 你说的话 | 触发的Skill |
+|----------|-------------|
+| "分析黄金XAUUSD" | trading-analysis（金易明） |
+| "执行帝意日报" | diyi-daily |
+| "发公众号" | wechat-publisher |
+| "回测VolBreak" | volbreak-backtest |
+| "启动自动交易" | volbreak-auto-trading |
+| "深度调研XX" | deep-research |
+| "做视频" | hyperframes-video-suite |
+| "写公众号文章" | weixin-article-writer |
+| "兵器库" / "skill索引" | tongshen-armory（本技能） |
+
+---
+
+## 四、迁移到新电脑
+
+### 步骤1：打包（在旧电脑执行）
+```
+需要复制的文件/目录：
+~/.workbuddy/skills/              ← 全部Skill
+~/.workbuddy/mcp.json             ← MCP配置（含API Key）
+~/.workbuddy/MEMORY.md            ← 全局记忆
+~/.workbuddy/SOUL.md              ← 通神人格
+~/.workbuddy/IDENTITY.md          ← 身份记录
+~/.workbuddy/USER.md              ← 用户画像
+```
+
+### 步骤2：恢复（在新电脑执行）
+1. 安装 WorkBuddy 桌面版
+2. 将以上文件复制到新电脑的 `~/.workbuddy/` 对应位置
+3. 打开 WorkBuddy，全部Skill和MCP自动生效
+
+### 步骤3：验证
+- 说出"兵器库"确认Skill索引加载
+- 说出"分析黄金"确认交易Skill工作
+- 说出"发公众号"确认发布链路正常
+
+---
+
+## 五、Skill 分类速览
+
+| 领域 | 数量 | 核心Skill |
+|------|------|-----------|
+| 通神核心 | 7 | tongshen-v8.1, anti-truncation, self-evolution |
+| 交易/量化 | 7 | trading-analysis, volbreak-auto, wallstreet |
+| 内容/公众号 | 12 | wechat-publisher, diyi-daily, khazix-writer |
+| 浏览器/自动化 | 4 | opencli-agent, tencent-novnc-cdp |
+| 视频/图像 | 5 | hyperframes, diyi-video-producer |
+| 研究/数据 | 5 | deep-research, hot, perplexity |
+| 开发/部署 | 6 | deploy-website, ui-new, vercel-deploy |
+| GitHub工具 | 5 | github-cli, github-token |
+| AI/Coze | 3 | coze, coze-image-2 |
+| 小说/创作 | 4 | fiction-crafter, novel-writing |
+| 工具类 | 15 | markitdown, md-to-pdf, humanizer |
+| 其他 | 5 | computer-vision, yolo, travel-cn |
+
+---
+
+## 六、注意事项
+
+1. **GitHub PAT** 2027-06-15到期，已设2027-06-01自动提醒
+2. **微信IP白名单** 换电脑/换网络后需更新微信后台IP白名单
+3. **MCP服务器** 首次使用需在WorkBuddy连接器管理中点击"信任"
+4. **Skill路径** 统一存放在 `~/.workbuddy/skills/<skill-name>/SKILL.md`
+
+---
+
+*天枢居中调度，五行各司其职。兵器库一键封存，迁移无忧。*
